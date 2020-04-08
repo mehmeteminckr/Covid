@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.covid.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_haberler"
+            app:destination="@id/haberler" />
+        <action
+            android:id="@+id/action_navigation_home_to_korunma"
+            app:destination="@id/korunma" />
+        <action
+            android:id="@+id/action_navigation_home_to_vakasyisi"
+            app:destination="@id/vakasyisi" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.covid.ui.dashboard.TestYapFragment"
+        android:label="@string/title_test"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_testSonuc"
+            app:destination="@id/testSonuc" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.covid.ui.notifications.NotificationsFragment"
+        android:label="@string/title_profil"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/haberler"
+        android:name="com.example.covid.ui.home.haberler"
+        android:label="fragment_haberler"
+        tools:layout="@layout/fragment_haberler" >
+        <action
+            android:id="@+id/action_haberler_to_tekbirhaber2"
+            app:destination="@id/tekbirhaber2" />
+    </fragment>
+    <fragment
+        android:id="@+id/korunma"
+        android:name="com.example.covid.ui.home.korunma"
+        android:label="fragment_korunma"
+        tools:layout="@layout/fragment_korunma" />
+    <fragment
+        android:id="@+id/vakasyisi"
+        android:name="com.example.covid.ui.home.vakasyisi"
+        android:label="fragment_vakasyisi"
+        tools:layout="@layout/fragment_vakasyisi" />
+    <fragment
+        android:id="@+id/tekbirhaber2"
+        android:name="com.example.covid.ui.home.tekbirhaber"
+        android:label="fragment_tekbirhaber"
+        tools:layout="@layout/fragment_tekbirhaber" />
+    <fragment
+        android:id="@+id/testSonuc"
+        android:name="com.example.covid.ui.dashboard.TestSonuc"
+        android:label="fragment_test_sonuc"
+        tools:layout="@layout/fragment_test_sonuc" />
+</navigation>

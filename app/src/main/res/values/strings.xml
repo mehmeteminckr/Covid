@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Covid</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kayit_ol">Kayit ol</string>
+    <string name="login">Login</string>
+    <string name="ifrenizi_giriniz">Şifrenizi giriniz</string>
+    <string name="kullan_c_ad_n_z_giriniz">Kullanıcı adınızı giriniz</string>
+    <string name="title_activity_buttomnav">buttomnav</string>
+    <string name="title_home">Home</string>
+    <string name="title_test">Test Yap</string>
+    <string name="title_profil">Profil</string>
+    <string name="cıkıs_yap">Çıkış Yap</string>
+    <string name="hakkimizda">Hakkımızda</string>
+</resources>
