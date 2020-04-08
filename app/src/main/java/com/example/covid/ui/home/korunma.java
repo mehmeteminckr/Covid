@@ -27,7 +27,7 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.Abs
 public class korunma extends Fragment{
 
     private View view;
-    public static final String DEVELOPER_KEY = "AIzaSyAI0bO150H8YzhB6CzuAM8JaMwdawVv604";
+    public static final String DEVELOPER_KEY = "*/*/";
     private static final String VIDEO_ID = "IqiTJK_uzUY";
     public korunma() {
         // Required empty public constructor
