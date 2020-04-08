@@ -35,6 +35,7 @@ public class main_fragment extends Fragment {
         view =inflater.inflate(R.layout.fragment_main_fragment, container, false);
         Button moveOn = view.findViewById(R.id.button_move);
         mAuth = FirebaseAuth.getInstance();
+        //mAuth.signOut();
         final FirebaseUser currentUser = mAuth.getCurrentUser();
         moveOn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -43,12 +43,7 @@ public class login_fragment extends Fragment implements View.OnClickListener {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view =inflater.inflate(R.layout.fragment_login_fragment, container, false);
-        /*mAuth = FirebaseAuth.getInstance();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
-            Intent intent= new Intent(getActivity(), buttomnav.class);
-            startActivity(intent);
-        }*/
+        mAuth = FirebaseAuth.getInstance();
         kullanici_adi=view.findViewById(R.id.kullanici_adi);
         sifre_ = view.findViewById(R.id.sifre_pass);
         button_login=view.findViewById(R.id.button_login);
